@@ -1,67 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>display-table 실습</title>
     <style>
-      #container {
-        display: table;
-        margin: 0 auto;
-        border-spacing: 0;
-      }
+        div.container {
+            display: table;
+            width: 900px;
+            margin: 0 auto;
+            border-spacing: 7px;
+        }
 
-      div.row {
-        display: table-row;
-      }
+        div.row {
+            display: table-row;
+        }
 
-      div.col {
-        display: table-cell;
-      }
+        div img {
+            width: 100%;
+        }
 
-      div.row img {
-        width: 100%;
-      }
+        div.cell {
+            height: 220px;
+            display: table-cell;
+            background-image: url('img1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
 
-      #container2 {
-        display: flex;
-      }
+        ul {
+            width: 900px;
+            margin: 0 auto;
+            padding: 0;
+            border-spacing: 3px;
+        }
 
-      #container2 img {
-        width: 100%;
-      }
+        li.cell {
+            width: 119px;
+            height: 74px;
+            display: table-cell;
+            background-image: url('img2.jpg');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
-  </head>
-  <body>
-    <div id="container">
-      <div class="row">
-        <div class="col"><img src="img1.jpg" /></div>
-        <div class="col"><img src="img2.jpg" /></div>
-        <div class="col"><img src="img3.jpg" /></div>
-      </div>
-      <div class="row">
-        <div class="col"><img src="img1.jpg" /></div>
-        <div class="col"><img src="img2.jpg" /></div>
-        <div class="col"><img src="img3.jpg" /></div>
-      </div>
-      <div class="row">
-        <div class="col"><img src="img1.jpg" /></div>
-        <div class="col"><img src="img2.jpg" /></div>
-        <div class="col"><img src="img3.jpg" /></div>
-      </div>
+</head>
+<body>
+    <!-- 9개의 이미지를 3행 3열로 출력 -->
+    <div class="container">
+        <div class="row">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="row">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="row">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
     </div>
 
-    <div id="container2">
-      <div><img src="img1.jpg" /></div>
-      <div><img src="img2.jpg" /></div>
-      <div><img src="img3.jpg" /></div>
-      <div><img src="img1.jpg" /></div>
-      <div><img src="img2.jpg" /></div>
-      <div><img src="img3.jpg" /></div>
-      <div><img src="img1.jpg" /></div>
-      <div><img src="img2.jpg" /></div>
-      <div><img src="img3.jpg" /></div>
-    </div>
-  </body>
+    <!-- 9개의 이미지를 1행으로 출력 -->
+    <ul>
+        <li class="cell"></li>
+        <li class="cell"></li>
+        <li class="cell"></li>
+        <li class="cell"></li>
+        <li class="cell"></li>
+        <li class="cell"></li>
+        <li class="cell"></li>
+        <li class="cell"></li>
+        <li class="cell"></li>
+    </ul>
+</body>
 </html>

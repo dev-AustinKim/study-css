@@ -1,37 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>display 실습</title>
     <style>
-      div#container {
-        display: flex;
-        justify-content: center;
-      }
+        #float-container {
+            width: 900px;
+            margin: 0 auto;
+            display: none;
+        }
 
-      div#container2 {
-        width: 1260px;
-        margin: 0 auto;
-      }
+        #float-container div {
+            width: 32%;
+            margin-left: 5px;
+            float: left;
+        }
 
-      div#container2 .item {
-        float: left;
-      }
+        #float-container div:nth-child(1) {
+            margin-left: 0;
+        }
+
+        #flex-container {
+            width: 900px;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+        }
+
+        #flex-container div {
+            width: 32%;
+        }
+
+        div img {
+            width: 100%;
+        }
     </style>
-  </head>
-  <body>
-    <div id="container">
-      <div class="item"><img src="img1.jpg" /></div>
-      <div class="item"><img src="img2.jpg" /></div>
-      <div class="item"><img src="img3.jpg" /></div>
+</head>
+<body>
+    <div id="flex-container">
+        <div>
+            <img src="img1.jpg">
+        </div>
+        <div>
+            <img src="img2.jpg">
+        </div>
+        <div>
+            <img src="img3.jpg">
+        </div>
     </div>
 
-    <div id="container2">
-      <div class="item"><img src="img1.jpg" /></div>
-      <div class="item"><img src="img2.jpg" /></div>
-      <div class="item"><img src="img3.jpg" /></div>
+    <div id="float-container">
+        <div>
+            <img src="img1.jpg">
+        </div>
+        <div>
+            <img src="img2.jpg">
+        </div>
+        <div>
+            <img src="img3.jpg">
+        </div>
     </div>
-  </body>
+</body>
 </html>
