@@ -1,0 +1,299 @@
+ol, ul {
+    list-style: none;
+}
+
+.membership2 {
+    font-size: 12px;
+    text-align: center;
+    margin: 15px 0px;
+    color: rgb(117, 117, 117);
+    margin: 30px 0px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(237, 237, 237);
+}
+
+.membership1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wrap {
+        width: 360px;
+        margin: 0px auto;
+        padding: 60px 0px;
+}
+
+.sns-icon-set {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.sns-icon {
+    margin: 0px 10px;
+}
+}
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.email {
+        display: block;
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        color: rgb(47, 52, 56);
+        letter-spacing: -0.3px;
+        word-break: keep-all;
+}
+.email-input {
+    display: flex;
+}
+
+body {
+    padding-top: 40px;
+    width: calc(100% - 30px);
+     margin: auto;
+     -webkit-font-smoothing: antialiased;
+     letter-spacing: -0.4px;
+     line-height: 1;
+    font-size: 15spx;
+}
+
+.email-input_local {
+    position: relative;
+    -webkit-box-flex: 1;
+    flex: 1 1 0px;
+}
+
+.form-control {
+    /* transition: border-color .2s,box-shadow .2s,background-color .2s; */
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 40px;
+    border-radius: 4px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    color: #424242;
+}
+
+.email-input-domain{
+    flex: 1 1 0px;
+}
+
+.form-control-blind {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+}
+
+.email-input-seperator {
+    -webkit-box-flex: 0;
+    flex: 0 0 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #dbdbdb;;
+}
+
+.form-control option {
+    color:#424242;
+}
+
+.email-input_local .form-control {
+    width: 100%;
+}
+
+.email-certification {
+    margin-bottom: 30px;
+    padding-top: 2px;
+}
+
+.email-certification-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    padding: 0px;
+    background: rgb(247, 248, 250);
+    color: rgb(194, 200, 204);
+    border-color: rgb(218, 220, 224);
+    border-radius: 4px;
+}
+
+div.password {
+    margin-bottom: 30px;
+    line-height: 1;
+    font-family: OhouseSans,Noto Sans KR,Apple SD Gothic Neo,ë§‘ì€ ê³ ë”•,Malgun Gothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -.4px;
+    font-size: 13px;
+}
+
+.password-title {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #2F3438;
+    letter-spacing: -0.3px;
+    word-break: keep-all;
+}
+
+.password-must {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #828C94;
+    letter-spacing: -0.3px;
+}
+
+.password-input {
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        white-space: nowrap;
+}
+
+
+
+.password-box {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 8px 15px 9px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Noto Sans KR,Noto Sans CJK KR,ë§‘ì€ ê³ ë”•,Malgun Gothic,sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    transition: border-color .1s,background-color .1s;
+    resize: none;
+}
+
+.password-check {
+    margin-bottom: 30px;
+    line-height: 1;
+    font-family: OhouseSans,Noto Sans KR,Apple SD Gothic Neo,맑은 고딕,Malgun Gothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -.4px;
+}
+
+.password-check-title {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #2F3438;
+    letter-spacing: -0.3px;
+    word-break: keep-all;
+}
+
+.password-check-box {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 8px 15px 9px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Noto Sans KR,Noto Sans CJK KR,맑은 고딕,Malgun Gothic,sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    transition: border-color .1s,background-color .1s;
+    resize: none;
+}
+
+.nickname {
+    margin-bottom: 30px;
+}
+
+.nickname-title {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #2F3438;
+    letter-spacing: -0.3px;
+    word-break: keep-all;
+}
+
+.nickname-attention {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #828C94;
+    letter-spacing: -0.3px;
+}
+
+.nickname-box {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    resize: none;
+    appearance: none;
+    margin: 0px;
+    padding: 8px 15px 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
+    border-image: initial;
+    border-radius: 4px;
+    transition: border-color 0.1s ease 0s, background-color 0.1s ease 0s;
+}
+
+.agree {
+    margin-bottom: 30px;
+}
+
+.agree-condition {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #2F3438;
+    letter-spacing: -0.3px;
+    word-break: keep-all;
+}
+
+.agree-all {
+    padding: 18px;
+    border: 1px solid #EAEDEF;
+}

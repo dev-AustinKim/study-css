@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 실습</title>
+    <style>
+
+        div.teacher {
+            position: relative;
+        }
+
+        div.img {
+            background-image: url("http://koreaitacademy.com/renewal2021/img/tch/teacher007.png");
+            background-size: 100%;
+            background-position: center;
+            width: 220px;
+            height: 315px;
+            margin: 0 auto;
+        }
+        
+        div.sunglasses {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            top: -340px;
+            left: -20px;
+            
+        }
+
+        div.cigarette {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            top: -190px;
+            left: -45px;
+            
+        }
+
+        div.fire {
+            position: relative;
+            width: 50px;
+            height: 100px;
+            margin: 0 auto;
+            top: -320px;
+            left: -45px;
+        }
+
+        div.sportsCar {
+            position: relative;
+            width: 600px;
+            height: 300px;
+            margin: 0 auto;
+            top: -400px;
+            left: -10px;
+            z-index: -1;
+        }
+
+        /* 이게 없고 위에 div만 있다면 div의 한 블록만 바꾸는 것이기 때문에 이미지 크기는 조절이 안된다. 
+        따라서 이렇게 써줌으로써 부모 블록(div)에 width와 height를 100%로 맞춰준다. */
+        img { 
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="teacher"> <!-- 지금 당장은 필요없지만 나중에 한 세트로 조절할 수도 있으니까 묶어놓았다. -->
+        <div class="img"></div>
+        <div class="cigarette"><img src="cigarette.png"></img></div>
+        <div class="sunglasses"><img src="sunglasses.png"></img></div>
+        <div class="fire"><img src="fire.png"></img></div>
+        <div class="sportsCar"><img src="sportsCar.png"></img></div>
+    </div>
+</body>
+</html>
+
+<!-- 강사님 버전 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 실습</title>
+    <style>
+        div.img {
+            position: relative;
+            background-image: url("http://koreaitacademy.com/renewal2021/img/tch/teacher007.png");
+            background-size: 100%;
+            background-position: center;
+            width: 220px;
+            height: 315px;
+            margin: 0 auto;
+        }
+        div.sunglasses {
+            position: absolute;
+            background-image: url("sunglasses.png");
+            background-size: 100%;
+            background-position: center;
+            width: 70px;
+            height: 40px;
+            margin: 0 auto;
+            top: 76px;
+            left: 52px;
+        }
+        div.candy {
+            position: absolute;
+            background-image: url("cigarette.png");
+            background-size: 100%;
+            background-position: center;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            top: 127px;
+            left: 27px;
+        }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <div class="sunglasses"></div>
+        <div class="candy"></div>
+    </div>
+</body>
+</html> -->

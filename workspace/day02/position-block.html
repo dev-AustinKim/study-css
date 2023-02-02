@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posotion</title>
+    <style>
+        div {
+            position: relative;
+            height: 24px;
+        }
+
+        #cookie {
+            background-color: lightpink;
+            z-index: 1;
+        }
+
+        #scorn {
+            background-color: wheat;
+            top: -24px;
+        }
+
+        #coffee {
+            background-color: saddlebrown;
+            top: -48px; /* 사이의 거리를 정확하게 계산해야 한다. */
+            z-index: 2; /* z-index는 index 순서로 확실하게 알 수 있도록 번호를 준다.  */
+            /* coffee가 cookie보다 최근에 선언되었다고 커피도 똑같이 z-index 1을 주면 
+            요소가 점점 쌓이면 알아보기 힘드니까 다 1로 주지 말고 순서를 하나하나  다 주면 알아보기 쉽다.
+             즉, 순서를 하나하나 다 주자. z index가 크면 클수록 화면의 앞쪽에(나에게 바로 보여지는 곳으로) 배치된다.*/
+
+        }
+
+        #ice-cream {
+            background-color: deepskyblue;
+            top: -72px;
+        }
+
+        #cake {
+            background-color: peru;
+            top: -96px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="cookie">
+        <span>쿠키</span>
+    </div>
+    <div id="scorn">
+        <span>스콘</span>
+    </div>
+    <div id="coffee">
+        <span>커피</span>
+    </div>
+    <div id="ice-cream">
+        <span>아이스크림</span>
+    </div>
+    <div id="cake">
+        <span>케이크</span>
+    </div>
+</body>
+</html>
