@@ -1,3 +1,46 @@
+.full-content {
+    padding-top: 40px;
+    width: calc(100% - 30px);
+    margin: auto;
+}
+
+body, html {
+    line-height: 1;
+    font-family: OhouseSans;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -.4px;
+    font-size: 13px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.full-screen {
+    height: 100%;
+}
+
+.div {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+a {
+    color: inherit;
+}
+
 ol, ul {
     list-style: none;
 }
@@ -18,9 +61,9 @@ ol, ul {
 }
 
 .wrap {
-        width: 360px;
-        margin: 0px auto;
-        padding: 60px 0px;
+    width: 360px;
+    margin: 0px auto;
+    padding: 60px 0px;
 }
 
 .sns-icon-set {
@@ -32,43 +75,28 @@ ol, ul {
 .sns-icon {
     margin: 0px 10px;
 }
-}
 
-ul {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
 
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
 
 .email {
-        display: block;
-        margin-bottom: 12px;
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 700;
-        color: rgb(47, 52, 56);
-        letter-spacing: -0.3px;
-        word-break: keep-all;
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: rgb(47, 52, 56);
+    letter-spacing: -0.3px;
+    word-break: keep-all;
 }
 .email-input {
     display: flex;
 }
 
-body {
-    padding-top: 40px;
-    width: calc(100% - 30px);
-     margin: auto;
-     -webkit-font-smoothing: antialiased;
-     letter-spacing: -0.4px;
-     line-height: 1;
-    font-size: 15spx;
+
+@media (min-width: 768px) {
+    body, html {
+        font-size: 15px;
+    }
 }
 
 .email-input_local {
@@ -83,15 +111,20 @@ body {
     box-sizing: border-box;
     height: 40px;
     padding: 0 15px;
-    font-size: 15px;
     line-height: 40px;
     border-radius: 4px;
     border: 1px solid #dbdbdb;
     background-color: #fff;
     color: #424242;
+    font-size: 15px;
+    width: 100%;
 }
 
-.email-input-domain{
+.form-control::placeholder {
+    color: #dbdbdb;
+}
+
+.email-input-domain {
     flex: 1 1 0px;
 }
 
@@ -108,11 +141,18 @@ body {
     flex: 0 0 20px;
     text-align: center;
     line-height: 40px;
-    color: #dbdbdb;;
+    color: #dbdbdb;
 }
 
 .form-control option {
-    color:#424242;
+    color: #424242;
+}
+
+.sns-icon-set {
+    padding: 0;
+}
+.sns-login {
+    margin: 0;
 }
 
 .email-input_local .form-control {
@@ -125,14 +165,25 @@ body {
 }
 
 .email-certification-button {
+    user-select: none;
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    box-sizing: border-box;
     border: 1px solid transparent;
+    font-family: Noto Sans KR;
+    font-weight: 700;
     text-decoration: none;
     text-align: center;
+    transition: color .1s,background-color .1s,border-color .1s;
     border-radius: 4px;
     cursor: pointer;
+
+    line-height: 20px;
+    font-size: 17px;
+    min-height: 50px;
     margin-top: 10px;
     width: 100%;
     height: 45px;
@@ -140,15 +191,16 @@ body {
     background: rgb(247, 248, 250);
     color: rgb(194, 200, 204);
     border-color: rgb(218, 220, 224);
-    border-radius: 4px;
+
 }
 
 div.password {
     margin-bottom: 30px;
     line-height: 1;
-    font-family: OhouseSans,Noto Sans KR,Apple SD Gothic Neo,ë§‘ì€ ê³ ë”•,Malgun Gothic,sans-serif;
+    font-family: OhouseSans, Noto Sans KR, Apple SD Gothic Neo, ë§‘ì € ê³ ë”•,
+        Malgun Gothic, sans-serif;
     -webkit-font-smoothing: antialiased;
-    letter-spacing: -.4px;
+    letter-spacing: -0.4px;
     font-size: 13px;
 }
 
@@ -158,7 +210,7 @@ div.password {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
-    color: #2F3438;
+    color: #2f3438;
     letter-spacing: -0.3px;
     word-break: keep-all;
 }
@@ -167,43 +219,47 @@ div.password {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 18px;
-    color: #828C94;
+    color: #828c94;
     letter-spacing: -0.3px;
 }
 
 .password-input {
-        overflow: hidden;
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
 }
 
-
-
 .password-box {
-    display: inline-block;
-    width: 100%;
-    margin: 0;
-    padding: 8px 15px 9px;
-    border: 1px solid #dbdbdb;
-    background-color: #fff;
-    color: #000;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: Noto Sans KR,Noto Sans CJK KR,ë§‘ì€ ê³ ë”•,Malgun Gothic,sans-serif;
-    font-size: 15px;
-    line-height: 21px;
-    transition: border-color .1s,background-color .1s;
-    resize: none;
+        padding: 8px 15px 9px;
+
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        border: 1px solid #dbdbdb;
+        background-color: #fff;
+        color: #000;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: Noto Sans KR,Noto Sans CJK KR,맑은 고딕,Malgun Gothic,sans-serif;
+        font-size: 15px;
+        line-height: 21px;
+        transition: border-color .1s,background-color .1s;
+        resize: none;
+}
+
+.password-box::placeholder {
+    color: #dbdbdb;
 }
 
 .password-check {
     margin-bottom: 30px;
     line-height: 1;
-    font-family: OhouseSans,Noto Sans KR,Apple SD Gothic Neo,맑은 고딕,Malgun Gothic,sans-serif;
+    font-family: OhouseSans, Noto Sans KR, Apple SD Gothic Neo, 맑은 고딕,
+        Malgun Gothic, sans-serif;
     -webkit-font-smoothing: antialiased;
-    letter-spacing: -.4px;
+    letter-spacing: -0.4px;
 }
 
 .password-check-title {
@@ -212,7 +268,7 @@ div.password {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
-    color: #2F3438;
+    color: #2f3438;
     letter-spacing: -0.3px;
     word-break: keep-all;
 }
@@ -227,11 +283,16 @@ div.password {
     color: #000;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: Noto Sans KR,Noto Sans CJK KR,맑은 고딕,Malgun Gothic,sans-serif;
+    font-family: Noto Sans KR, Noto Sans CJK KR, 맑은 고딕, Malgun Gothic,
+        sans-serif;
     font-size: 15px;
     line-height: 21px;
-    transition: border-color .1s,background-color .1s;
+    transition: border-color 0.1s, background-color 0.1s;
     resize: none;
+}
+
+.password-check-box::placeholder {
+    color: #dbdbdb;
 }
 
 .nickname {
@@ -244,7 +305,7 @@ div.password {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
-    color: #2F3438;
+    color: #2f3438;
     letter-spacing: -0.3px;
     word-break: keep-all;
 }
@@ -253,7 +314,7 @@ div.password {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 18px;
-    color: #828C94;
+    color: #828c94;
     letter-spacing: -0.3px;
 }
 
@@ -263,7 +324,8 @@ div.password {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     box-sizing: border-box;
-    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕",
+        "Malgun Gothic", sans-serif;
     font-size: 15px;
     line-height: 21px;
     resize: none;
@@ -278,6 +340,10 @@ div.password {
     transition: border-color 0.1s ease 0s, background-color 0.1s ease 0s;
 }
 
+.nickname-box::placeholder {
+    color: #dbdbdb;
+}
+
 .agree {
     margin-bottom: 30px;
 }
@@ -288,12 +354,459 @@ div.password {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
-    color: #2F3438;
+    color: #2f3438;
     letter-spacing: -0.3px;
     word-break: keep-all;
 }
 
-.agree-all {
+.agree-frame {
     padding: 18px;
-    border: 1px solid #EAEDEF;
+    border: 1px solid #eaedef;
+}
+
+.agree-all {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.agree-all-label {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+}
+
+.all-check-box-frame {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #dadde0;
+    background-color: #ffffff;
+    transition: border-color 0.1s, background-color 0.1s;
+    flex-shrink: 0;
+
+}
+
+.agree-all-checkbox {
+    position: absolute;
+    overflow: hidden;
+    top: 3.6px;
+    left: 3px;
+    width: 0px;
+    height: 12px;
+    transition: width 0.2s 0.1s;
+}
+
+.all-check-textFrame {
+    flex: 1;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 6px;
+    color: #2f3438;
+}
+
+.all-check-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.all-check-text-sub {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #828c94;
+}
+
+.agree-all-check {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    vertical-align: top;
+    color: #FFFFFF;
+}
+
+.agree-all-check::before {
+    font-family: OhouseIcon;
+    vertical-align: top;
+    content: "\e958";
+}
+
+.agree-inside-line {
+    padding: 0;
+    height: 1px;
+    border: none;
+    background-color: #eaedef;
+    margin: 18px 0;
+}
+
+.age-frame {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.age-label {
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.age-check-box {
+    position: absolute;
+    overflow: hidden;
+    top: 3.6px;
+    left: 3px;
+    width: 0px;
+    height: 12px;
+    -webkit-transition: width 0.2s 0.1s;
+    transition: width 0.2s 0.1s;
+}
+
+.age-check-box-frame {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #dadde0;
+    background-color: #ffffff;
+    transition: border-color 0.1s, background-color 0.1s;
+    flex-shrink: 0;
+}
+
+.age-text-frame {
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 6px;
+    color: #2f3438;
+}
+
+.age-text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+}
+
+.terms-condition-frame {
+    margin-top: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.terms-condition-label {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+}
+
+.terms-condition-check-box-frame {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #dadde0;
+    background-color: #ffffff;
+    transition: border-color 0.1s, background-color 0.1s;
+    flex-shrink: 0;
+}
+
+.terms-condition-check-box {
+    position: absolute;
+    overflow: hidden;
+    top: 3.6px;
+    left: 3px;
+    width: 0px;
+    height: 12px;
+    transition: width 0.2s 0.1s;
+}
+
+.terms-condition-text-frame {
+    flex: 1;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 6px;
+    color: #2f3438;
+    margin-top: 20;
+}
+
+.terms-condition-text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+}
+
+.terms-condition-arrow-frame {
+    margin-left: 8px;
+    color: #2f3438;
+}
+
+.terms-condition-arrow {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.terms-condition-arrow::before {
+    font-family: OhouseIcon;
+    vertical-align: top;
+    content: "\e969";
+}
+
+.information-correct-frame {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.information-correct-label {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+}
+
+.information-correct-checkbox-frame {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #dadde0;
+    background-color: #ffffff;
+    transition: border-color 0.1s, background-color 0.1s;
+    flex-shrink: 0;
+}
+
+.information-correct-checkbox {
+    position: absolute;
+    overflow: hidden;
+    top: 3.6px;
+    left: 3px;
+    width: 0px;
+    height: 12px;
+    transition: width 0.2s 0.1s;
+}
+.information-correct-text-frame {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 6px;
+    color: #2f3438;
+}
+
+.information-correct-text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+}
+
+.information-correct-text::after {
+    content: "(필수)";
+    display: inline-block;
+    padding-left: 2px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #009fce;
+}
+
+.information-correct-arrow-frame {
+    margin-left: 8px;
+    color: #2f3438;
+}
+
+.marketing-frame {
+    margin-top: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.marketing-label {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+}
+
+.marekting-checkbox-frame {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #dadde0;
+    background-color: #ffffff;
+    transition: border-color 0.1s, background-color 0.1s;
+    flex-shrink: 0;
+}
+
+.marketing-checkbox {
+    position: absolute;
+    overflow: hidden;
+    top: 3.6px;
+    left: 3px;
+    width: 0px;
+    height: 12px;
+    transition: width 0.2s 0.1s;
+}
+
+.marketing-text-frame {
+    flex: 1;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 6px;
+    color: #2f3438;
+}
+
+.marketing-text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+}
+
+.marketing-text::after {
+    content: "(선택)";
+    display: inline-block;
+    padding-left: 2px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #828c94;
+}
+
+.marketing-arrow-frame {
+    margin-left: 8px;
+    color: #2f3438;
+}
+
+.sms-frame {
+    margin-top: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sms-label {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+}
+
+.sms-checkbox-frame {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #dadde0;
+    background-color: #ffffff;
+    -webkit-transition: border-color 0.1s, background-color 0.1s;
+    transition: border-color 0.1s, background-color 0.1s;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.sms-checkbox {
+    position: absolute;
+    overflow: hidden;
+    top: 3.6px;
+    left: 3px;
+    width: 0px;
+    height: 12px;
+    -webkit-transition: width 0.2s 0.1s;
+    transition: width 0.2s 0.1s;
+}
+
+.sms-text-frame {
+    flex: 1;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 6px;
+    color: #2f3438;
+}
+
+.sms-text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+}
+
+.signUp-button {
+    width: 100%;
+    font-size: 17px;
+    line-height: 26px;
+    padding: 11px 10px;
+    border-color: #09addb;
+    background-color: #09addb;
+    user-select: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    font-family: Noto Sans KR;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.1s, background-color 0.1s, border-color 0.1s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.go-login {
+    color: #424242;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.login {
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 10px;
 }

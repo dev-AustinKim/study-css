@@ -1,0 +1,65 @@
+@import "https://assets.ohou.se/design-system/bbf3fca1e650ee6d.css";
+
+@font-face {
+    font-family: OhouseIcon;
+    src: url(https://assets.ohou.se/design-system/3298ed52addbc709.eot);
+    src: url(https://assets.ohou.se/design-system/3298ed52addbc709.eot#iefix)
+            format("embedded-opentype"),
+        url(https://assets.ohou.se/design-system/d8923b386a66fd50.woff2)
+            format("woff2"),
+        url(https://assets.ohou.se/design-system/9e79341d6a2fe0d2.woff)
+            format("woff"),
+        url(https://assets.ohou.se/design-system/5355f736e6a7bc5b.ttf)
+            format("truetype"),
+        url(https://assets.ohou.se/design-system/3ba7913eab100858.svg#OhouseIcon)
+            format("svg");
+}
+
+@font-face {
+    font-family: OhouseSans;
+    font-weight: 700;
+    src: url(https://assets.ohou.se/design-system/b3f31cd4248f404e.woff2)
+            format("woff2"),
+        url(https://assets.ohou.se/design-system/0f909ac06f35e6b3.otf#iefix)
+            format("opentype"),
+        url(https://assets.ohou.se/design-system/858f79a098e9eabb.woff)
+            format("woff"),
+        url(https://assets.ohou.se/design-system/0f909ac06f35e6b3.otf)
+            format("opentype"),
+        url(https://assets.ohou.se/design-system/5bc99f879812c352.ttf)
+            format("truetype");
+}
+
+@font-face {
+    font-family: OhouseSans;
+    font-weight: 500;
+    src: url(https://assets.ohou.se/design-system/c168d3c43da800c2.woff2)
+            format("woff2"),
+        url(https://assets.ohou.se/design-system/1a838f271a125273.otf#iefix)
+            format("opentype"),
+        url(https://assets.ohou.se/design-system/5f4bd9b03223c556.woff)
+            format("woff"),
+        url(https://assets.ohou.se/design-system/1a838f271a125273.otf)
+            format("opentype"),
+        url(https://assets.ohou.se/design-system/161f1f22a19b05fb.ttf)
+            format("truetype");
+}
+
+@font-face {
+    font-family: OhouseSans;
+    font-weight: 400;
+    src: url(https://assets.ohou.se/design-system/8cc79ae1ff7b3e5a.woff2)
+            format("woff2"),
+        url(https://assets.ohou.se/design-system/ba62a407902a9ffd.otf#iefix)
+            format("opentype"),
+        url(https://assets.ohou.se/design-system/91ea937079bb0cc1.woff)
+            format("woff"),
+        url(https://assets.ohou.se/design-system/ba62a407902a9ffd.otf)
+            format("opentype"),
+        url(https://assets.ohou.se/design-system/4f8e060bee1f0dc4.ttf)
+            format("truetype");
+}
+
+html {
+    font-family: OhouseSans, sans-serif;
+}
