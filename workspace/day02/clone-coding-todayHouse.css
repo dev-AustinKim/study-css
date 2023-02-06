@@ -92,17 +92,15 @@ ol, ul {
     display: flex;
 }
 
-
-@media (min-width: 768px) {
-    body, html {
-        font-size: 15px;
-    }
-}
-
 .email-input_local {
     position: relative;
     -webkit-box-flex: 1;
     flex: 1 1 0px;
+}
+
+blockquote, body, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
 }
 
 .form-control {
@@ -128,6 +126,12 @@ ol, ul {
     flex: 1 1 0px;
 }
 
+@media (min-width: 768px) {
+    body, html {
+        font-size: 15px;
+    }
+} 
+
 .form-control-blind {
     overflow: hidden;
     position: absolute;
@@ -152,7 +156,10 @@ ol, ul {
     padding: 0;
 }
 .sns-login {
-    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    margin: 15px 0px;
+    color: rgb(117, 117, 117);
 }
 
 .email-input_local .form-control {

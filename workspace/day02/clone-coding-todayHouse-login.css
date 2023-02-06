@@ -1,0 +1,326 @@
+.full-frame {
+    height: 100%;
+}
+
+body, html {
+    line-height: 1;
+    font-family: OhouseSans, "Noto Sans KR", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.4px;
+    font-size: 13px;
+}
+
+footer, header, main {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+}
+
+.login-main {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 100%;
+    background-color: #fafafa;
+}
+
+.email-input::placeholder {
+    color: #dbdbdb;
+}
+
+.password-input::placeholder {
+    color: #dbdbdb;
+}
+
+.layout, .page, body, html {
+    height: 100%;
+}
+
+.login-noFooter {
+    display: flex;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.noFooter-content {
+    flex: 1 0 auto;
+    margin: 0 auto;
+    max-width: 300px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+
+blockquote, body, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, td, textarea, th, ul 
+{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+    touch-action: manipulation;
+    color: inherit;
+    text-decoration: none;
+}
+
+.icon-frame {
+    margin-bottom: 30px;
+}
+
+.icon-content {
+    margin: 0 auto;
+}
+
+.content-frame {
+    width: 300px;   
+}
+
+.email {
+    position: relative;
+}
+
+.email-input {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    transition: .2s box-shadow,.2s background-color;
+    padding: 13px 15px 14px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    resize: none;
+    margin: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
+    border-image: initial;
+}
+
+.password {
+    position: relative;
+}
+
+.password-input {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+    margin-top: -1px;
+    transition: .2s box-shadow,.2s background-color;
+    padding: 13px 15px 14px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    resize: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
+    border-image: initial;
+}
+
+.button {
+    margin: 20px 0;
+    width: 100%;
+    padding: 15px 10px;
+    line-height: 20px;
+    font-size: 17px;
+    min-height: 50px;
+    background-color: #35c5f0;
+    border-color: #35c5f0;
+    color: #fff;
+    user-select: none;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    text-decoration: none;
+    transition: color 0.1s ease 0s, background-color 0.1s ease 0s, border-color 0.1s ease 0s;
+    border-radius: 4px;
+}
+
+.login-section  {
+    width: 100%;
+    text-align: center;
+}
+
+.password-replace {
+    margin-left: 0;
+}
+
+.signUp {
+    margin-left: 20px
+}
+
+.sns-simple-login {
+    margin: 35px 0px 15px;
+    color: rgb(117, 117, 117);
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.33;
+    text-align: center;
+}
+
+.sns-frame {
+    margin: 0px 10px;
+    transition: opacity 0.1s ease 0s;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+@media (min-width: 768px) {
+    body, html {
+        font-size: 15px;
+    }
+} 
+
+.sns-frame > svg {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+a * {
+    border: none;
+}
+
+.login-problem {
+    margin-top: 24px;
+    color: rgb(194, 200, 204);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.no-member-frame {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+.no-member-button {
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    margin: 0px 0px 20px;
+    padding: 0px;
+    font-size: 15px;
+    line-height: 1.4;
+    color: rgb(66, 66, 66);
+}
+
+.no-member-bottom {
+    padding: 3px;
+    margin: -3px;
+    box-sizing: border-box;
+}
+
+
+.footer {
+    width: 100%;
+    color: rgb(117, 117, 117);
+    font-size: 10px;
+    line-height: 20px;
+    margin: -5px 0px 25px;
+    text-align: center;
+}
+
+.order-number {   
+    -webkit-text-fill-color: rgb(66, 66, 66);
+    padding: 13px 15px 14px;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #dbdbdb;
+    color: #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Noto Sans KR,Noto Sans CJK KR,맑은 고딕,Malgun Gothic,sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    transition: border-color .1s,background-color .1s;
+    resize: none;
+    -webkit-appearance: none;
+    margin-bottom: 10px;
+}
+
+.no-member-email {
+
+    -webkit-text-fill-color: rgb(66, 66, 66);
+    padding: 13px 15px 14px;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Noto Sans KR,Noto Sans CJK KR,맑은 고딕,Malgun Gothic,sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    transition: border-color .1s,background-color .1s;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.order-check {
+    user-select: none;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    background: none;
+    font-family: Noto Sans KR,Noto Sans CJK KR,ë§‘ì€ ê³ ë”•,Malgun Gothic,sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    transition: color .1s,background-color .1s,border-color .1s;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #35c5f0;
+    border-color: #35c5f0;
+    color: #fff;
+
+    padding: 15px 10px;
+    line-height: 20px;
+    font-size: 17px;
+    min-height: 50px;
+
+    width: 100%;
+}
